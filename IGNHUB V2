@@ -1,1084 +1,1083 @@
-local function createGui(parent)
-	--ScreenGui1--
-	local ScreenGui1 = Instance.new("ScreenGui",parent)
-	ScreenGui1["Name"] = "IGN HUB V2"
-	ScreenGui1["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
-	----ScreenGui1----
-	--Frame2--
-	local Frame2 = Instance.new("Frame",ScreenGui1)
-	Frame2["BackgroundTransparency"] = 0.10000000149011612
-	Frame2["Position"] = UDim2.new(0.347095877, 0, 0.358133674, 0)
-	Frame2["BorderColor3"] = Color3.new(1, 0, 0.0156863)
-	Frame2["Size"] = UDim2.new(0, 437, 0, 225)
-	Frame2["BorderSizePixel"] = 4
-	Frame2["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame2----
-	--TextLabel3--
-	local TextLabel3 = Instance.new("TextLabel",Frame2)
-	TextLabel3["LineHeight"] = 3
-	TextLabel3["TextColor3"] = Color3.new(1, 0, 0.0156863)
-	TextLabel3["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel3["Text"] = "IGN HUB V2"
-	TextLabel3["Font"] = Enum.Font.DenkOne
-	TextLabel3["BackgroundTransparency"] = 5
-	TextLabel3["Position"] = UDim2.new(-0.0183066353, 0, -0.0188679248, 0)
-	TextLabel3["TextSize"] = 30
-	TextLabel3["Size"] = UDim2.new(0, 147, 0, 42)
-	TextLabel3["BorderSizePixel"] = 0
-	TextLabel3["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel3----
-	--TextLabel4--
-	local TextLabel4 = Instance.new("TextLabel",Frame2)
-	TextLabel4["TextColor3"] = Color3.new(1, 1, 1)
-	TextLabel4["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel4["Text"] = "AIMBOT (CAMERA LOCK)"
-	TextLabel4["Font"] = Enum.Font.Fantasy
-	TextLabel4["BackgroundTransparency"] = 3
-	TextLabel4["Position"] = UDim2.new(-0.034324944, 0, 0.170985386, 0)
-	TextLabel4["TextSize"] = 24
-	TextLabel4["Size"] = UDim2.new(0, 291, 0, 38)
-	TextLabel4["BorderSizePixel"] = 0
-	TextLabel4["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel4----
-	--TextLabel5--
-	local TextLabel5 = Instance.new("TextLabel",Frame2)
-	TextLabel5["TextColor3"] = Color3.new(1, 1, 1)
-	TextLabel5["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel5["Text"] = "ESP"
-	TextLabel5["Font"] = Enum.Font.Fantasy
-	TextLabel5["BackgroundTransparency"] = 3
-	TextLabel5["Position"] = UDim2.new(-0.322654456, 0, 0.27886799, 0)
-	TextLabel5["TextSize"] = 24
-	TextLabel5["Size"] = UDim2.new(0, 335, 0, 71)
-	TextLabel5["BorderSizePixel"] = 0
-	TextLabel5["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel5----
-	--TextLabel6--
-	local TextLabel6 = Instance.new("TextLabel",Frame2)
-	TextLabel6["TextColor3"] = Color3.new(1, 1, 1)
-	TextLabel6["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel6["Text"] = "CLICK TP (RISKY)"
-	TextLabel6["Font"] = Enum.Font.Fantasy
-	TextLabel6["BackgroundTransparency"] = 3
-	TextLabel6["Position"] = UDim2.new(0.0160183068, 0, 0.661509454, 0)
-	TextLabel6["TextSize"] = 24
-	TextLabel6["Size"] = UDim2.new(0, 163, 0, 50)
-	TextLabel6["BorderSizePixel"] = 0
-	TextLabel6["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel6----
-	--TextLabel7--
-	local TextLabel7 = Instance.new("TextLabel",Frame2)
-	TextLabel7["TextColor3"] = Color3.new(1, 1, 1)
-	TextLabel7["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel7["Text"] = "FRIEND ESP"
-	TextLabel7["Font"] = Enum.Font.Fantasy
-	TextLabel7["BackgroundTransparency"] = 3
-	TextLabel7["Position"] = UDim2.new(-0.068649888, 0, 0.484989554, 0)
-	TextLabel7["TextSize"] = 24
-	TextLabel7["Size"] = UDim2.new(0, 200, 0, 50)
-	TextLabel7["BorderSizePixel"] = 0
-	TextLabel7["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel7----
-	--TextButton8--
-	local TextButton8 = Instance.new("TextButton",Frame2)
-	TextButton8["TextColor3"] = Color3.new(1, 0, 0.0156863)
-	TextButton8["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton8["Text"] = "x"
-	TextButton8["TextSize"] = 35
-	TextButton8["Font"] = Enum.Font.SourceSans
-	TextButton8["BackgroundTransparency"] = 3
-	TextButton8["Position"] = UDim2.new(0.908466816, 0, -0.0503144637, 0)
-	TextButton8["Name"] = "Close"
-	TextButton8["Size"] = UDim2.new(0, 61, 0, 52)
-	TextButton8["BorderSizePixel"] = 0
-	TextButton8["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton8----
-	--Script9--
-	local Script9 = Instance.new("Script",TextButton8)
-	----Script9----
-	--TextLabel10--
-	local TextLabel10 = Instance.new("TextLabel",Frame2)
-	TextLabel10["TextColor3"] = Color3.new(1, 1, 1)
-	TextLabel10["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel10["Text"] = "(Press Right Shift To Reopen)"
-	TextLabel10["Font"] = Enum.Font.SourceSans
-	TextLabel10["BackgroundTransparency"] = 3
-	TextLabel10["Position"] = UDim2.new(0.565217376, 0, -0.0440251566, 0)
-	TextLabel10["TextSize"] = 14
-	TextLabel10["Size"] = UDim2.new(0, 200, 0, 50)
-	TextLabel10["BorderSizePixel"] = 0
-	TextLabel10["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel10----
-	--TextButton11--
-	local TextButton11 = Instance.new("TextButton",Frame2)
-	TextButton11["TextColor3"] = Color3.new(0, 0, 0)
-	TextButton11["BorderColor3"] = Color3.new(1, 1, 1)
-	TextButton11["Text"] = ""
-	TextButton11["Font"] = Enum.Font.SourceSans
-	TextButton11["Name"] = "ESP BUTTON"
-	TextButton11["Position"] = UDim2.new(0.121281467, 0, 0.389979124, 0)
-	TextButton11["TextSize"] = 14
-	TextButton11["Size"] = UDim2.new(0, 24, 0, 20)
-	TextButton11["BorderSizePixel"] = 2
-	TextButton11["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----TextButton11----
-	--Script12--
-	local Script12 = Instance.new("Script",TextButton11)
-	----Script12----
-	--Script13--
-	local Script13 = Instance.new("Script",TextButton11)
-	----Script13----
-	--TextButton14--
-	local TextButton14 = Instance.new("TextButton",Frame2)
-	TextButton14["TextColor3"] = Color3.new(0, 0, 0)
-	TextButton14["BorderColor3"] = Color3.new(1, 1, 1)
-	TextButton14["Text"] = ""
-	TextButton14["Font"] = Enum.Font.SourceSans
-	TextButton14["Name"] = "FRIEND ESP BUTTON"
-	TextButton14["Position"] = UDim2.new(0.334096104, 0, 0.554423571, 0)
-	TextButton14["TextSize"] = 14
-	TextButton14["Size"] = UDim2.new(0, 24, 0, 20)
-	TextButton14["BorderSizePixel"] = 2
-	TextButton14["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----TextButton14----
-	--Script15--
-	local Script15 = Instance.new("Script",TextButton14)
-	----Script15----
-	--TextButton16--
-	local TextButton16 = Instance.new("TextButton",Frame2)
-	TextButton16["TextColor3"] = Color3.new(0, 0, 0)
-	TextButton16["BorderColor3"] = Color3.new(1, 1, 1)
-	TextButton16["Text"] = ""
-	TextButton16["Font"] = Enum.Font.SourceSans
-	TextButton16["Name"] = "CLICK TP BUTTON"
-	TextButton16["Position"] = UDim2.new(0.41418764, 0, 0.727756917, 0)
-	TextButton16["TextSize"] = 14
-	TextButton16["Size"] = UDim2.new(0, 24, 0, 20)
-	TextButton16["BorderSizePixel"] = 2
-	TextButton16["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----TextButton16----
-	--Script17--
-	local Script17 = Instance.new("Script",TextButton16)
-	----Script17----
-	--TextLabel18--
-	local TextLabel18 = Instance.new("TextLabel",Frame2)
-	TextLabel18["TextColor3"] = Color3.new(1, 1, 1)
-	TextLabel18["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel18["Text"] = "(Hold Right Click)"
-	TextLabel18["Font"] = Enum.Font.SourceSans
-	TextLabel18["BackgroundTransparency"] = 2
-	TextLabel18["Position"] = UDim2.new(0.670480549, 0, 0.142222226, 0)
-	TextLabel18["TextSize"] = 14
-	TextLabel18["Size"] = UDim2.new(0, 89, 0, 50)
-	TextLabel18["BorderSizePixel"] = 0
-	TextLabel18["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel18----
-	--TextLabel19--
-	local TextLabel19 = Instance.new("TextLabel",Frame2)
-	TextLabel19["TextColor3"] = Color3.new(1, 0, 0.0156863)
-	TextLabel19["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel19["Text"] = "(Many More Versions To Come!)"
-	TextLabel19["Font"] = Enum.Font.SourceSans
-	TextLabel19["BackgroundTransparency"] = 2
-	TextLabel19["Position"] = UDim2.new(0.228832945, 0, -0.0799999982, 0)
-	TextLabel19["TextSize"] = 12
-	TextLabel19["Size"] = UDim2.new(0, 200, 0, 50)
-	TextLabel19["BorderSizePixel"] = 0
-	TextLabel19["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel19----
-	--TextButton20--
-	local TextButton20 = Instance.new("TextButton",Frame2)
-	TextButton20["TextColor3"] = Color3.new(0, 0, 0)
-	TextButton20["BorderColor3"] = Color3.new(1, 1, 1)
-	TextButton20["Text"] = ""
-	TextButton20["Font"] = Enum.Font.SourceSans
-	TextButton20["Name"] = "AIMBOT BUTTON"
-	TextButton20["Position"] = UDim2.new(0.606407344, 0, 0.207756892, 0)
-	TextButton20["TextSize"] = 14
-	TextButton20["Size"] = UDim2.new(0, 24, 0, 20)
-	TextButton20["BorderSizePixel"] = 2
-	TextButton20["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----TextButton20----
-	--Script21--
-	local Script21 = Instance.new("Script",TextButton20)
-	----Script21----
-	--Script22--
-	local Script22 = Instance.new("Script",TextButton20)
-	----Script22----
-	--TextLabel23--
-	local TextLabel23 = Instance.new("TextLabel",Frame2)
-	TextLabel23["TextColor3"] = Color3.new(1, 0, 0.0156863)
-	TextLabel23["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel23["Text"] = "Make sure to join the "
-	TextLabel23["Font"] = Enum.Font.SourceSans
-	TextLabel23["BackgroundTransparency"] = 2
-	TextLabel23["Position"] = UDim2.new(0, 0, 0.910398245, 0)
-	TextLabel23["TextSize"] = 14
-	TextLabel23["Size"] = UDim2.new(0, 109, 0, 11)
-	TextLabel23["BorderSizePixel"] = 0
-	TextLabel23["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel23----
-	--TextLabel24--
-	local TextLabel24 = Instance.new("TextLabel",Frame2)
-	TextLabel24["TextColor3"] = Color3.new(0.0313726, 0.0313726, 0.839216)
-	TextLabel24["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel24["Text"] = "Discord"
-	TextLabel24["Font"] = Enum.Font.SourceSans
-	TextLabel24["BackgroundTransparency"] = 2
-	TextLabel24["Position"] = UDim2.new(0.068649888, 0, 0.826666653, 0)
-	TextLabel24["TextSize"] = 14
-	TextLabel24["Size"] = UDim2.new(0, 200, 0, 50)
-	TextLabel24["BorderSizePixel"] = 0
-	TextLabel24["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel24----
-	--TextLabel25--
-	local TextLabel25 = Instance.new("TextLabel",Frame2)
-	TextLabel25["TextColor3"] = Color3.new(1, 0, 0.0156863)
-	TextLabel25["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel25["Text"] = "(https://discord.gg/TvPErMUW8Q) for updates & scripts!"
-	TextLabel25["TextStrokeColor3"] = Color3.new(1, 1, 1)
-	TextLabel25["Font"] = Enum.Font.SourceSans
-	TextLabel25["BackgroundTransparency"] = 2
-	TextLabel25["Position"] = UDim2.new(0.430205941, 0, 0.826666653, 0)
-	TextLabel25["TextSize"] = 14
-	TextLabel25["Size"] = UDim2.new(0, 200, 0, 50)
-	TextLabel25["BorderSizePixel"] = 0
-	TextLabel25["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel25----
-	--Script26--
-	local Script26 = Instance.new("Script",Frame2)
-	----Script26----
-	spawn(function() --Source for Script9
-		local script = Script9
-		local UserInputService = game:GetService("UserInputService")
-		
-		local button = script.Parent
-		local screenGui = button:FindFirstAncestorOfClass("ScreenGui")
-		
-		if not screenGui then
-			warn("CloseButton must be inside a ScreenGui")
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local IGNHUBV2 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local ESPBUTTON = Instance.new("TextButton")
+local FRIENDESPBUTTON = Instance.new("TextButton")
+local CLICKTPBUTTON = Instance.new("TextButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local AIMBOTBUTTON = Instance.new("TextButton")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+
+--Properties:
+
+IGNHUBV2.Name = "IGN HUB V2"
+IGNHUBV2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+IGNHUBV2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = IGNHUBV2
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 0.100
+Frame.BorderColor3 = Color3.fromRGB(255, 0, 4)
+Frame.BorderSizePixel = 4
+Frame.Position = UDim2.new(0.347095877, 0, 0.358133674, 0)
+Frame.Size = UDim2.new(0, 437, 0, 225)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 5.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.0183066353, 0, -0.0188679248, 0)
+TextLabel.Size = UDim2.new(0, 147, 0, 42)
+TextLabel.Font = Enum.Font.DenkOne
+TextLabel.LineHeight = 3.000
+TextLabel.Text = "IGN HUB V2"
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.TextSize = 30.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 3.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-0.034324944, 0, 0.170985386, 0)
+TextLabel_2.Size = UDim2.new(0, 291, 0, 38)
+TextLabel_2.Font = Enum.Font.Fantasy
+TextLabel_2.Text = "AIMBOT (CAMERA LOCK)"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 24.000
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 3.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-0.322654456, 0, 0.27886799, 0)
+TextLabel_3.Size = UDim2.new(0, 335, 0, 71)
+TextLabel_3.Font = Enum.Font.Fantasy
+TextLabel_3.Text = "ESP"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 24.000
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 3.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0160183068, 0, 0.661509454, 0)
+TextLabel_4.Size = UDim2.new(0, 163, 0, 50)
+TextLabel_4.Font = Enum.Font.Fantasy
+TextLabel_4.Text = "CLICK TP (RISKY)"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 24.000
+
+TextLabel_5.Parent = Frame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 3.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(-0.068649888, 0, 0.484989554, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.Fantasy
+TextLabel_5.Text = "FRIEND ESP"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 24.000
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 3.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.908466816, 0, -0.0503144637, 0)
+Close.Size = UDim2.new(0, 61, 0, 52)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "x"
+Close.TextColor3 = Color3.fromRGB(255, 0, 4)
+Close.TextSize = 35.000
+
+TextLabel_6.Parent = Frame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 3.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.565217376, 0, -0.0440251566, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "(Press Right Shift To Reopen)"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 14.000
+
+ESPBUTTON.Name = "ESP BUTTON"
+ESPBUTTON.Parent = Frame
+ESPBUTTON.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ESPBUTTON.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ESPBUTTON.BorderSizePixel = 2
+ESPBUTTON.Position = UDim2.new(0.121281467, 0, 0.389979124, 0)
+ESPBUTTON.Size = UDim2.new(0, 24, 0, 20)
+ESPBUTTON.Font = Enum.Font.SourceSans
+ESPBUTTON.Text = ""
+ESPBUTTON.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESPBUTTON.TextSize = 14.000
+
+FRIENDESPBUTTON.Name = "FRIEND ESP BUTTON"
+FRIENDESPBUTTON.Parent = Frame
+FRIENDESPBUTTON.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FRIENDESPBUTTON.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FRIENDESPBUTTON.BorderSizePixel = 2
+FRIENDESPBUTTON.Position = UDim2.new(0.334096104, 0, 0.554423571, 0)
+FRIENDESPBUTTON.Size = UDim2.new(0, 24, 0, 20)
+FRIENDESPBUTTON.Font = Enum.Font.SourceSans
+FRIENDESPBUTTON.Text = ""
+FRIENDESPBUTTON.TextColor3 = Color3.fromRGB(0, 0, 0)
+FRIENDESPBUTTON.TextSize = 14.000
+
+CLICKTPBUTTON.Name = "CLICK TP BUTTON"
+CLICKTPBUTTON.Parent = Frame
+CLICKTPBUTTON.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CLICKTPBUTTON.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CLICKTPBUTTON.BorderSizePixel = 2
+CLICKTPBUTTON.Position = UDim2.new(0.41418764, 0, 0.727756917, 0)
+CLICKTPBUTTON.Size = UDim2.new(0, 24, 0, 20)
+CLICKTPBUTTON.Font = Enum.Font.SourceSans
+CLICKTPBUTTON.Text = ""
+CLICKTPBUTTON.TextColor3 = Color3.fromRGB(0, 0, 0)
+CLICKTPBUTTON.TextSize = 14.000
+
+TextLabel_7.Parent = Frame
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 2.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.670480549, 0, 0.142222226, 0)
+TextLabel_7.Size = UDim2.new(0, 89, 0, 50)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "(Hold Right Click)"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 14.000
+
+TextLabel_8.Parent = Frame
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 2.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.228832945, 0, -0.0799999982, 0)
+TextLabel_8.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "(Many More Versions To Come!)"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel_8.TextSize = 12.000
+
+AIMBOTBUTTON.Name = "AIMBOT BUTTON"
+AIMBOTBUTTON.Parent = Frame
+AIMBOTBUTTON.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AIMBOTBUTTON.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AIMBOTBUTTON.BorderSizePixel = 2
+AIMBOTBUTTON.Position = UDim2.new(0.606407344, 0, 0.207756892, 0)
+AIMBOTBUTTON.Size = UDim2.new(0, 24, 0, 20)
+AIMBOTBUTTON.Font = Enum.Font.SourceSans
+AIMBOTBUTTON.Text = ""
+AIMBOTBUTTON.TextColor3 = Color3.fromRGB(0, 0, 0)
+AIMBOTBUTTON.TextSize = 14.000
+
+TextLabel_9.Parent = Frame
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 2.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0, 0, 0.910398245, 0)
+TextLabel_9.Size = UDim2.new(0, 109, 0, 11)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "Make sure to join the "
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel_9.TextSize = 14.000
+
+TextLabel_10.Parent = Frame
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 2.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0.068649888, 0, 0.826666653, 0)
+TextLabel_10.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "Discord"
+TextLabel_10.TextColor3 = Color3.fromRGB(8, 8, 214)
+TextLabel_10.TextSize = 14.000
+
+TextLabel_11.Parent = Frame
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 2.000
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0.430205941, 0, 0.826666653, 0)
+TextLabel_11.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "(https://discord.gg/TvPErMUW8Q) for updates & scripts!"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+-- Scripts:
+
+local function HFYNB_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local button = script.Parent
+	local screenGui = button:FindFirstAncestorOfClass("ScreenGui")
+	
+	if not screenGui then
+		warn("CloseButton must be inside a ScreenGui")
+		return
+	end
+	
+	-- Hide the GUI when Close is clicked
+	button.MouseButton1Click:Connect(function()
+		screenGui.Enabled = false
+	end)
+	
+	-- Show the GUI again with Right Shift
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then
 			return
 		end
-		
-		-- Hide the GUI when Close is clicked
-		button.MouseButton1Click:Connect(function()
-			screenGui.Enabled = false
-		end)
-		
-		-- Show the GUI again with Right Shift
-		UserInputService.InputBegan:Connect(function(input, gameProcessed)
-			if gameProcessed then
-				return
-			end
-		
-			if input.KeyCode == Enum.KeyCode.RightShift then
-				screenGui.Enabled = true
-			end
-		end)
-	end)
-	spawn(function() --Source for Script12
-		local script = Script12
-		local Players = game:GetService("Players")
-		local RunService = game:GetService("RunService")
-		
-		local LocalPlayer = Players.LocalPlayer
-		local Button = script.Parent
-		
-		--// SETTINGS
-		local MAX_DISTANCE = 1000
-		
-		local ESP_COLOR = Color3.fromRGB(255, 0, 0)
-		local ON_COLOR = Color3.fromRGB(50, 200, 80)
-		
-		--// Save the button's original color
-		local NORMAL_COLOR = Button.BackgroundColor3
-		
-		local ESP_ENABLED = false
-		local ESPObjects = {}
-		
-		Button.Text = 
-		
-		
-		--// Check whether a player is a valid enemy
-		local function isEnemy(player)
-			if player == LocalPlayer then
-				return false
-			end
-		
-			-- Ignore teammates
-			if LocalPlayer.Team ~= nil and player.Team ~= nil then
-				if LocalPlayer.Team == player.Team then
-					return false
-				end
-			end
-		
-			local character = player.Character
-			if not character then
-				return false
-			end
-		
-			local humanoid = character:FindFirstChildOfClass("Humanoid")
-			local root = character:FindFirstChild("HumanoidRootPart")
-			local head = character:FindFirstChild("Head")
-		
-			if not humanoid or not root or not head then
-				return false
-			end
-		
-			-- Ignore dead players
-			if humanoid.Health <= 0 then
-				return false
-			end
-		
-			return true
+	
+		if input.KeyCode == Enum.KeyCode.RightShift then
+			screenGui.Enabled = true
 		end
-		
-		
-		--// Remove ESP from a player
-		local function removeESP(player)
-			local objects = ESPObjects[player]
-		
-			if objects then
-				if objects.highlight then
-					objects.highlight:Destroy()
-				end
-		
-				if objects.billboard then
-					objects.billboard:Destroy()
-				end
-		
-				ESPObjects[player] = nil
-			end
-		end
-		
-		
-		--// Create ESP for a player
-		local function createESP(player)
-			if not isEnemy(player) then
-				return
-			end
-		
-			local character = player.Character
-			local humanoid = character:FindFirstChildOfClass("Humanoid")
-			local head = character:FindFirstChild("Head")
-		
-			if not head or not humanoid then
-				return
-			end
-		
-			-- Remove old ESP first
-			removeESP(player)
-		
-			--// RED CHARACTER HIGHLIGHT
-			local highlight = Instance.new("Highlight")
-			highlight.Name = "EnemyESP"
-			highlight.Adornee = character
-		
-			highlight.FillColor = ESP_COLOR
-			highlight.OutlineColor = ESP_COLOR
-		
-			highlight.FillTransparency = 0.5
-			highlight.OutlineTransparency = 0
-		
-			-- Visible through walls
-			highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-		
-			highlight.Parent = character
-		
-		
-			--// NAME + HP DISPLAY
-			local billboard = Instance.new("BillboardGui")
-			billboard.Name = "EnemyESPInfo"
-			billboard.Adornee = head
-		
-			billboard.Size = UDim2.new(0, 250, 0, 45)
-			billboard.StudsOffset = Vector3.new(0, 3, 0)
-		
-			billboard.AlwaysOnTop = true
-			billboard.MaxDistance = MAX_DISTANCE
-		
-			billboard.Parent = head
-		
-		
-			-- Container
-			local container = Instance.new("Frame")
-			container.Size = UDim2.fromScale(1, 1)
-			container.BackgroundTransparency = 1
-			container.Parent = billboard
-		
-		
-			-- Username
-			local nameLabel = Instance.new("TextLabel")
-			nameLabel.Name = "Username"
-		
-			nameLabel.Size = UDim2.new(0.65, 0, 1, 0)
-			nameLabel.Position = UDim2.new(0, 0, 0, 0)
-		
-			nameLabel.BackgroundTransparency = 1
-		
-			nameLabel.Text = player.Name
-			nameLabel.TextColor3 = ESP_COLOR
-		
-			nameLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
-			nameLabel.TextStrokeTransparency = 0
-		
-			nameLabel.TextScaled = true
-			nameLabel.Font = Enum.Font.SourceSansBold
-		
-			nameLabel.Parent = container
-		
-		
-			-- HP
-			local hpLabel = Instance.new("TextLabel")
-			hpLabel.Name = "Health"
-		
-			hpLabel.Size = UDim2.new(0.35, 0, 1, 0)
-			hpLabel.Position = UDim2.new(0.65, 0, 0, 0)
-		
-			hpLabel.BackgroundTransparency = 1
-		
-			hpLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
-		
-			hpLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
-			hpLabel.TextStrokeTransparency = 0
-		
-			hpLabel.TextScaled = true
-			hpLabel.Font = Enum.Font.SourceSansBold
-		
-			hpLabel.Parent = container
-		
-		
-			-- Store objects
-			ESPObjects[player] = {
-				highlight = highlight,
-				billboard = billboard,
-				humanoid = humanoid,
-				hpLabel = hpLabel
-			}
-		end
-		
-		
-		--// Update ESP
-		local function updateESP()
-			if not ESP_ENABLED then
-				return
-			end
-		
-			local myCharacter = LocalPlayer.Character
-			local myRoot = myCharacter and myCharacter:FindFirstChild("HumanoidRootPart")
-		
-			if not myRoot then
-				return
-			end
-		
-			for _, player in ipairs(Players:GetPlayers()) do
-		
-				if player ~= LocalPlayer then
-		
-					local character = player.Character
-					local root = character and character:FindFirstChild("HumanoidRootPart")
-					local humanoid = character and character:FindFirstChildOfClass("Humanoid")
-		
-					-- Check team
-					local sameTeam = false
-		
-					if LocalPlayer.Team ~= nil and player.Team ~= nil then
-						sameTeam = LocalPlayer.Team == player.Team
-					end
-		
-					if root
-						and humanoid
-						and humanoid.Health > 0
-						and not sameTeam then
-		
-						local distance =
-							(root.Position - myRoot.Position).Magnitude
-		
-						if distance <= MAX_DISTANCE then
-		
-							-- Create ESP if it doesn't exist
-							if not ESPObjects[player] then
-								createESP(player)
-							end
-		
-							-- Update HP
-							local objects = ESPObjects[player]
-		
-							if objects and objects.hpLabel then
-		
-								local health = math.floor(humanoid.Health)
-								local maxHealth = math.floor(humanoid.MaxHealth)
-		
-								objects.hpLabel.Text =
-									"HP: " .. health .. "/" .. maxHealth
-		
-								-- Change HP color based on health
-								local healthPercent =
-									humanoid.Health / humanoid.MaxHealth
-		
-								if healthPercent > 0.6 then
-									objects.hpLabel.TextColor3 =
-										Color3.fromRGB(0, 255, 0)
-		
-								elseif healthPercent > 0.3 then
-									objects.hpLabel.TextColor3 =
-										Color3.fromRGB(255, 255, 0)
-		
-								else
-									objects.hpLabel.TextColor3 =
-										Color3.fromRGB(255, 50, 50)
-								end
-							end
-		
-						else
-							-- Too far away
-							removeESP(player)
-						end
-		
-					else
-						-- Dead, teammate, or invalid
-						removeESP(player)
-					end
-				end
-			end
-		end
-		
-		
-		--// Toggle ESP
-		Button.MouseButton1Click:Connect(function()
-		
-			ESP_ENABLED = not ESP_ENABLED
-		
-			if ESP_ENABLED then
-		
-				-- Green button
-				Button.BackgroundColor3 = ON_COLOR
-				Button.Text = 
-		
-				updateESP()
-		
-			else
-		
-				-- Restore original button color
-				Button.BackgroundColor3 = NORMAL_COLOR
-				Button.Text = 
-		
-				-- Remove all ESP
-				for player in pairs(ESPObjects) do
-					removeESP(player)
-				end
-			end
-		end)
-		
-		
-		--// Continuously update ESP
-		RunService.Heartbeat:Connect(function()
-			if ESP_ENABLED then
-				updateESP()
-			end
-		end)
-		
-		
-		--// Clean up when players leave
-		Players.PlayerRemoving:Connect(function(player)
-			removeESP(player)
-		end)
-	end)
-	spawn(function() --Source for Script13
-		local script = Script13
-		local button = script.Parent
-		
-		local normalColor = button.BackgroundColor3
-		local greenColor = Color3.fromRGB(50, 200, 80)
-		
-		local enabled = false
-		
-		button.Activated:Connect(function()
-			enabled = not enabled
-		
-			if enabled then
-				button.BackgroundColor3 = greenColor
-			else
-				button.BackgroundColor3 = normalColor
-			end
-		end)
-	end)
-	spawn(function() --Source for Script15
-		local script = Script15
-		local Players = game:GetService("Players")
-		local RunService = game:GetService("RunService")
-		
-		local LocalPlayer = Players.LocalPlayer
-		local Button = script.Parent
-		
-		local FRIEND_COLOR = Color3.fromRGB(50, 255, 80)
-		local ON_COLOR = Color3.fromRGB(50, 200, 80)
-		
-		local NORMAL_COLOR = Button.BackgroundColor3
-		local ENABLED = false
-		
-		local friendESP = {}
-		
-		
-		-- Check whether a player is a Roblox friend
-		local function isFriend(player)
-			if player == LocalPlayer then
-				return false
-			end
-		
-			local success, result = pcall(function()
-				return LocalPlayer:IsFriendsWith(player.UserId)
-			end)
-		
-			return success and result
-		end
-		
-		
-		-- Remove ESP
-		local function removeESP(player)
-			local data = friendESP[player]
-		
-			if data then
-				if data.highlight then
-					data.highlight:Destroy()
-				end
-		
-				if data.billboard then
-					data.billboard:Destroy()
-				end
-		
-				friendESP[player] = nil
-			end
-		end
-		
-		
-		-- Create ESP
-		local function createESP(player)
-			if not ENABLED or not isFriend(player) then
-				return
-			end
-		
-			local character = player.Character
-			if not character then
-				return
-			end
-		
-			local humanoid = character:FindFirstChildOfClass("Humanoid")
-			local head = character:FindFirstChild("Head")
-		
-			if not humanoid or not head or humanoid.Health <= 0 then
-				return
-			end
-		
-			removeESP(player)
-		
-		
-			-- Green character highlight
-			local highlight = Instance.new("Highlight")
-		
-			highlight.Adornee = character
-		
-		
-			highlight.FillTransparency = 0.5
-			highlight.OutlineTransparency = 0
-		
-			highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-		
-			highlight.Parent = character
-		
-		
-			-- Name + HP display
-			local billboard = Instance.new("BillboardGui")
-		
-			billboard.Name = "FriendESPInfo"
-			billboard.Adornee = head
-		
-			billboard.Size = UDim2.new(0, 240, 0, 45)
-			billboard.StudsOffset = Vector3.new(0, 3, 0)
-		
-			billboard.AlwaysOnTop = true
-			billboard.Parent = head
-		
-		
-			local label = Instance.new("TextLabel")
-		
-			label.Size = UDim2.fromScale(1, 1)
-			label.BackgroundTransparency = 1
-		
-			label.TextColor3 = FRIEND_COLOR
-		
-			label.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
-			label.TextStrokeTransparency = 0
-		
-			label.TextScaled = true
-			label.Font = Enum.Font.SourceSansBold
-		
-			label.Parent = billboard
-		
-		
-			friendESP[player] = {
-				highlight = highlight,
-				billboard = billboard,
-				humanoid = humanoid,
-				label = label
-			}
-		end
-		
-		
-		-- Update ESP
-		local function updateESP()
-			if not ENABLED then
-				return
-			end
-		
-			for _, player in ipairs(Players:GetPlayers()) do
-		
-				if player ~= LocalPlayer then
-		
-					if isFriend(player) then
-		
-						local character = player.Character
-						local humanoid = character
-							and character:FindFirstChildOfClass("Humanoid")
-						local head = character
-							and character:FindFirstChild("Head")
-		
-						if humanoid
-							and head
-							and humanoid.Health > 0 then
-		
-							if not friendESP[player] then
-								createESP(player)
-							end
-		
-							local data = friendESP[player]
-		
-							if data and data.label then
-								local hp = math.floor(humanoid.Health)
-								local maxHP = math.floor(humanoid.MaxHealth)
-		
-								data.label.Text =
-									player.Name
-									.. "   HP: "
-									.. hp
-									.. "/"
-									.. maxHP
-							end
-		
-						else
-							removeESP(player)
-						end
-		
-					else
-						removeESP(player)
-					end
-				end
-			end
-		end
-		
-		
-		-- Toggle button
-		Button.Activated:Connect(function()
-		
-			ENABLED = not ENABLED
-		
-			if ENABLED then
-		
-				Button.BackgroundColor3 = ON_COLOR
-		
-				updateESP()
-		
-			else
-		
-				Button.BackgroundColor3 = NORMAL_COLOR
-		
-				for player in pairs(friendESP) do
-					removeESP(player)
-				end
-			end
-		end)
-		
-		
-		-- Continuously update
-		RunService.Heartbeat:Connect(function()
-			if ENABLED then
-				updateESP()
-			end
-		end)
-		
-		
-		-- Remove ESP when player leaves
-		Players.PlayerRemoving:Connect(function(player)
-			removeESP(player)
-		end)
-	end)
-	spawn(function() --Source for Script17
-		local script = Script17
-		local Players = game:GetService("Players")
-		local UserInputService = game:GetService("UserInputService")
-		
-		local player = Players.LocalPlayer
-		local mouse = player:GetMouse()
-		local button = script.Parent
-		
-		local enabled = false
-		
-		local normalColor = button.BackgroundColor3
-		local enabledColor = Color3.fromRGB(50, 200, 80)
-		
-		
-		button.Activated:Connect(function()
-			enabled = not enabled
-		
-			if enabled then
-				button.BackgroundColor3 = enabledColor
-			else
-				button.BackgroundColor3 = normalColor
-			end
-		end)
-		
-		UserInputService.InputBegan:Connect(function(input, gameProcessed)
-			if not enabled or gameProcessed then
-				return
-			end
-		
-			if input.UserInputType == Enum.UserInputType.MouseButton1 then
-		
-				-- Don't teleport when clicking the GUI itself
-				if UserInputService:GetFocusedTextBox() then
-					return
-				end
-		
-				local character = player.Character
-				local root = character and character:FindFirstChild("HumanoidRootPart")
-		
-				if not root then
-					return
-				end
-		
-				local hitPosition = mouse.Hit.Position
-		
-				-- Put the character slightly above the clicked surface
-				root.CFrame = CFrame.new(
-					hitPosition + Vector3.new(0, 3, 0)
-				)
-			end
-		end)
-	end)
-	spawn(function() --Source for Script21
-		local script = Script21
-		local Players = game:GetService("Players")
-		local UserInputService = game:GetService("UserInputService")
-		local RunService = game:GetService("RunService")
-		
-		local LocalPlayer = Players.LocalPlayer
-		local Camera = workspace.CurrentCamera
-		
-		local AIMBOT_ENABLED = true
-		local FOV_RADIUS = 60
-		local SMOOTHNESS = 0.2
-		local MAX_DISTANCE = 1000
-		
-		local holdingAim = false
-		local currentTarget = nil
-		
-		local function isValidTarget(player)
-			if not player or player == LocalPlayer then
-				return false
-			end
-		
-			-- Don't target teammates
-			if player.Team ~= nil and LocalPlayer.Team ~= nil then
-				if player.Team == LocalPlayer.Team then
-					return false
-				end
-			end
-		
-			local character = player.Character
-			if not character then
-				return false
-			end
-		
-			local humanoid = character:FindFirstChildOfClass("Humanoid")
-			if not humanoid or humanoid.Health <= 0 then
-				return false
-			end
-		
-			local root = character:FindFirstChild("HumanoidRootPart")
-			if not root then
-				return false
-			end
-		
-			-- Don't target characters too far away
-			if (root.Position - Camera.CFrame.Position).Magnitude > MAX_DISTANCE then
-				return false
-			end
-		
-			return true
-		end
-		
-		local function getClosestTarget()
-			local viewportSize = Camera.ViewportSize
-			local screenCenter = Vector2.new(
-				viewportSize.X / 2,
-				viewportSize.Y / 2
-			)
-		
-			local closestPlayer = nil
-			local closestDistance = FOV_RADIUS
-		
-			for _, player in ipairs(Players:GetPlayers()) do
-				if isValidTarget(player) then
-					local character = player.Character
-					local root = character:FindFirstChild("HumanoidRootPart")
-		
-					local screenPosition, onScreen =
-						Camera:WorldToViewportPoint(root.Position)
-		
-					if onScreen then
-						local screenDistance = (
-							Vector2.new(screenPosition.X, screenPosition.Y)
-							- screenCenter
-						).Magnitude
-		
-						if screenDistance < closestDistance then
-							closestDistance = screenDistance
-							closestPlayer = player
-						end
-					end
-				end
-			end
-		
-			return closestPlayer
-		end
-		
-		UserInputService.InputBegan:Connect(function(input, processed)
-			if processed then
-				return
-			end
-		
-			if input.UserInputType == Enum.UserInputType.MouseButton2 then
-				holdingAim = true
-				currentTarget = getClosestTarget()
-			end
-		end)
-		
-		UserInputService.InputEnded:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseButton2 then
-				holdingAim = false
-				currentTarget = nil
-			end
-		end)
-		
-		RunService.RenderStepped:Connect(function()
-			if not AIMBOT_ENABLED or not holdingAim then
-				return
-			end
-		
-			-- Target died/left/changed teams
-			if not isValidTarget(currentTarget) then
-				currentTarget = getClosestTarget()
-			end
-		
-			if not currentTarget then
-				return
-			end
-		
-			local character = currentTarget.Character
-			local root = character and character:FindFirstChild("HumanoidRootPart")
-		
-			if not root then
-				currentTarget = nil
-				return
-			end
-		
-			-- Aim at the target
-			local targetPosition = root.Position
-		
-			local desiredCFrame = CFrame.lookAt(
-				Camera.CFrame.Position,
-				targetPosition
-			)
-		
-			Camera.CFrame = Camera.CFrame:Lerp(
-				desiredCFrame,
-				SMOOTHNESS
-			)
-		end)
-	end)
-	spawn(function() --Source for Script22
-		local script = Script22
-		local button = script.Parent
-		
-		local normalColor = button.BackgroundColor3
-		local enabledColor = Color3.fromRGB(50, 200, 80)
-		
-		local enabled = false
-		
-		button.MouseButton1Click:Connect(function()
-			enabled = not enabled
-		
-			if enabled then
-				button.BackgroundColor3 = enabledColor
-			else
-				button.BackgroundColor3 = normalColor
-			end
-		end)
-	end)
-	spawn(function() --Source for Script26
-		local script = Script26
-		local UserInputService = game:GetService("UserInputService")
-		
-		local frame = script.Parent
-		
-		-- How tall the draggable top area is
-		local DRAG_HEIGHT = 40
-		
-		local dragging = false
-		local dragStart
-		local startPosition
-		
-		local function updateDrag(input)
-			local delta = input.Position - dragStart
-		
-			frame.Position = UDim2.new(
-				startPosition.X.Scale,
-				startPosition.X.Offset + delta.X,
-				startPosition.Y.Scale,
-				startPosition.Y.Offset + delta.Y
-			)
-		end
-		
-		frame.InputBegan:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseButton1 then
-		
-				local mousePosition = input.Position
-				local frameTop = frame.AbsolutePosition.Y
-		
-				-- Only allow dragging from the top of the Frame
-				if mousePosition.Y <= frameTop + DRAG_HEIGHT then
-					dragging = true
-					dragStart = input.Position
-					startPosition = frame.Position
-				end
-			end
-		end)
-		
-		frame.InputChanged:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseMovement then
-				UserInputService.InputChanged:Connect(function(changedInput)
-					if dragging and changedInput == input then
-						updateDrag(changedInput)
-					end
-				end)
-			end
-		end)
-		
-		UserInputService.InputEnded:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseButton1 then
-				dragging = false
-			end
-		end)
 	end)
 end
-createGui(game.CoreGui) --coregui by default you should but change it
+coroutine.wrap(HFYNB_fake_script)()
+local function ZROIR_fake_script() -- ESPBUTTON.LocalScript 
+	local script = Instance.new('LocalScript', ESPBUTTON)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local LocalPlayer = Players.LocalPlayer
+	local Button = script.Parent
+	
+	--// SETTINGS
+	local MAX_DISTANCE = 1000
+	
+	local ESP_COLOR = Color3.fromRGB(255, 0, 0)
+	local ON_COLOR = Color3.fromRGB(50, 200, 80)
+	
+	--// Save the button's original color
+	local NORMAL_COLOR = Button.BackgroundColor3
+	
+	local ESP_ENABLED = false
+	local ESPObjects = {}
+	
+	Button.Text = 
+	
+	
+	--// Check whether a player is a valid enemy
+	local function isEnemy(player)
+		if player == LocalPlayer then
+			return false
+		end
+	
+		-- Ignore teammates
+		if LocalPlayer.Team ~= nil and player.Team ~= nil then
+			if LocalPlayer.Team == player.Team then
+				return false
+			end
+		end
+	
+		local character = player.Character
+		if not character then
+			return false
+		end
+	
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		local root = character:FindFirstChild("HumanoidRootPart")
+		local head = character:FindFirstChild("Head")
+	
+		if not humanoid or not root or not head then
+			return false
+		end
+	
+		-- Ignore dead players
+		if humanoid.Health <= 0 then
+			return false
+		end
+	
+		return true
+	end
+	
+	
+	--// Remove ESP from a player
+	local function removeESP(player)
+		local objects = ESPObjects[player]
+	
+		if objects then
+			if objects.highlight then
+				objects.highlight:Destroy()
+			end
+	
+			if objects.billboard then
+				objects.billboard:Destroy()
+			end
+	
+			ESPObjects[player] = nil
+		end
+	end
+	
+	
+	--// Create ESP for a player
+	local function createESP(player)
+		if not isEnemy(player) then
+			return
+		end
+	
+		local character = player.Character
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		local head = character:FindFirstChild("Head")
+	
+		if not head or not humanoid then
+			return
+		end
+	
+		-- Remove old ESP first
+		removeESP(player)
+	
+		--// RED CHARACTER HIGHLIGHT
+		local highlight = Instance.new("Highlight")
+		highlight.Name = "EnemyESP"
+		highlight.Adornee = character
+	
+		highlight.FillColor = ESP_COLOR
+		highlight.OutlineColor = ESP_COLOR
+	
+		highlight.FillTransparency = 0.5
+		highlight.OutlineTransparency = 0
+	
+		-- Visible through walls
+		highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+	
+		highlight.Parent = character
+	
+	
+		--// NAME + HP DISPLAY
+		local billboard = Instance.new("BillboardGui")
+		billboard.Name = "EnemyESPInfo"
+		billboard.Adornee = head
+	
+		billboard.Size = UDim2.new(0, 250, 0, 45)
+		billboard.StudsOffset = Vector3.new(0, 3, 0)
+	
+		billboard.AlwaysOnTop = true
+		billboard.MaxDistance = MAX_DISTANCE
+	
+		billboard.Parent = head
+	
+	
+		-- Container
+		local container = Instance.new("Frame")
+		container.Size = UDim2.fromScale(1, 1)
+		container.BackgroundTransparency = 1
+		container.Parent = billboard
+	
+	
+		-- Username
+		local nameLabel = Instance.new("TextLabel")
+		nameLabel.Name = "Username"
+	
+		nameLabel.Size = UDim2.new(0.65, 0, 1, 0)
+		nameLabel.Position = UDim2.new(0, 0, 0, 0)
+	
+		nameLabel.BackgroundTransparency = 1
+	
+		nameLabel.Text = player.Name
+		nameLabel.TextColor3 = ESP_COLOR
+	
+		nameLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+		nameLabel.TextStrokeTransparency = 0
+	
+		nameLabel.TextScaled = true
+		nameLabel.Font = Enum.Font.SourceSansBold
+	
+		nameLabel.Parent = container
+	
+	
+		-- HP
+		local hpLabel = Instance.new("TextLabel")
+		hpLabel.Name = "Health"
+	
+		hpLabel.Size = UDim2.new(0.35, 0, 1, 0)
+		hpLabel.Position = UDim2.new(0.65, 0, 0, 0)
+	
+		hpLabel.BackgroundTransparency = 1
+	
+		hpLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+	
+		hpLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+		hpLabel.TextStrokeTransparency = 0
+	
+		hpLabel.TextScaled = true
+		hpLabel.Font = Enum.Font.SourceSansBold
+	
+		hpLabel.Parent = container
+	
+	
+		-- Store objects
+		ESPObjects[player] = {
+			highlight = highlight,
+			billboard = billboard,
+			humanoid = humanoid,
+			hpLabel = hpLabel
+		}
+	end
+	
+	
+	--// Update ESP
+	local function updateESP()
+		if not ESP_ENABLED then
+			return
+		end
+	
+		local myCharacter = LocalPlayer.Character
+		local myRoot = myCharacter and myCharacter:FindFirstChild("HumanoidRootPart")
+	
+		if not myRoot then
+			return
+		end
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+	
+			if player ~= LocalPlayer then
+	
+				local character = player.Character
+				local root = character and character:FindFirstChild("HumanoidRootPart")
+				local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+	
+				-- Check team
+				local sameTeam = false
+	
+				if LocalPlayer.Team ~= nil and player.Team ~= nil then
+					sameTeam = LocalPlayer.Team == player.Team
+				end
+	
+				if root
+					and humanoid
+					and humanoid.Health > 0
+					and not sameTeam then
+	
+					local distance =
+						(root.Position - myRoot.Position).Magnitude
+	
+					if distance <= MAX_DISTANCE then
+	
+						-- Create ESP if it doesn't exist
+						if not ESPObjects[player] then
+							createESP(player)
+						end
+	
+						-- Update HP
+						local objects = ESPObjects[player]
+	
+						if objects and objects.hpLabel then
+	
+							local health = math.floor(humanoid.Health)
+							local maxHealth = math.floor(humanoid.MaxHealth)
+	
+							objects.hpLabel.Text =
+								"HP: " .. health .. "/" .. maxHealth
+	
+							-- Change HP color based on health
+							local healthPercent =
+								humanoid.Health / humanoid.MaxHealth
+	
+							if healthPercent > 0.6 then
+								objects.hpLabel.TextColor3 =
+									Color3.fromRGB(0, 255, 0)
+	
+							elseif healthPercent > 0.3 then
+								objects.hpLabel.TextColor3 =
+									Color3.fromRGB(255, 255, 0)
+	
+							else
+								objects.hpLabel.TextColor3 =
+									Color3.fromRGB(255, 50, 50)
+							end
+						end
+	
+					else
+						-- Too far away
+						removeESP(player)
+					end
+	
+				else
+					-- Dead, teammate, or invalid
+					removeESP(player)
+				end
+			end
+		end
+	end
+	
+	
+	--// Toggle ESP
+	Button.MouseButton1Click:Connect(function()
+	
+		ESP_ENABLED = not ESP_ENABLED
+	
+		if ESP_ENABLED then
+	
+			-- Green button
+			Button.BackgroundColor3 = ON_COLOR
+			Button.Text = 
+	
+			updateESP()
+	
+		else
+	
+			-- Restore original button color
+			Button.BackgroundColor3 = NORMAL_COLOR
+			Button.Text = 
+	
+			-- Remove all ESP
+			for player in pairs(ESPObjects) do
+				removeESP(player)
+			end
+		end
+	end)
+	
+	
+	--// Continuously update ESP
+	RunService.Heartbeat:Connect(function()
+		if ESP_ENABLED then
+			updateESP()
+		end
+	end)
+	
+	
+	--// Clean up when players leave
+	Players.PlayerRemoving:Connect(function(player)
+		removeESP(player)
+	end)
+end
+coroutine.wrap(ZROIR_fake_script)()
+local function HFSH_fake_script() -- ESPBUTTON.LocalScript 
+	local script = Instance.new('LocalScript', ESPBUTTON)
+
+	local button = script.Parent
+	
+	local normalColor = button.BackgroundColor3
+	local greenColor = Color3.fromRGB(50, 200, 80)
+	
+	local enabled = false
+	
+	button.Activated:Connect(function()
+		enabled = not enabled
+	
+		if enabled then
+			button.BackgroundColor3 = greenColor
+		else
+			button.BackgroundColor3 = normalColor
+		end
+	end)
+end
+coroutine.wrap(HFSH_fake_script)()
+local function QQEI_fake_script() -- FRIENDESPBUTTON.LocalScript 
+	local script = Instance.new('LocalScript', FRIENDESPBUTTON)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local LocalPlayer = Players.LocalPlayer
+	local Button = script.Parent
+	
+	local FRIEND_COLOR = Color3.fromRGB(50, 255, 80)
+	local ON_COLOR = Color3.fromRGB(50, 200, 80)
+	
+	local NORMAL_COLOR = Button.BackgroundColor3
+	local ENABLED = false
+	
+	local friendESP = {}
+	
+	
+	-- Check whether a player is a Roblox friend
+	local function isFriend(player)
+		if player == LocalPlayer then
+			return false
+		end
+	
+		local success, result = pcall(function()
+			return LocalPlayer:IsFriendsWith(player.UserId)
+		end)
+	
+		return success and result
+	end
+	
+	
+	-- Remove ESP
+	local function removeESP(player)
+		local data = friendESP[player]
+	
+		if data then
+			if data.highlight then
+				data.highlight:Destroy()
+			end
+	
+			if data.billboard then
+				data.billboard:Destroy()
+			end
+	
+			friendESP[player] = nil
+		end
+	end
+	
+	
+	-- Create ESP
+	local function createESP(player)
+		if not ENABLED or not isFriend(player) then
+			return
+		end
+	
+		local character = player.Character
+		if not character then
+			return
+		end
+	
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		local head = character:FindFirstChild("Head")
+	
+		if not humanoid or not head or humanoid.Health <= 0 then
+			return
+		end
+	
+		removeESP(player)
+	
+	
+		-- Green character highlight
+		local highlight = Instance.new("Highlight")
+	
+		highlight.Adornee = character
+	
+	
+		highlight.FillTransparency = 0.5
+		highlight.OutlineTransparency = 0
+	
+		highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+	
+		highlight.Parent = character
+	
+	
+		-- Name + HP display
+		local billboard = Instance.new("BillboardGui")
+	
+		billboard.Name = "FriendESPInfo"
+		billboard.Adornee = head
+	
+		billboard.Size = UDim2.new(0, 240, 0, 45)
+		billboard.StudsOffset = Vector3.new(0, 3, 0)
+	
+		billboard.AlwaysOnTop = true
+		billboard.Parent = head
+	
+	
+		local label = Instance.new("TextLabel")
+	
+		label.Size = UDim2.fromScale(1, 1)
+		label.BackgroundTransparency = 1
+	
+		label.TextColor3 = FRIEND_COLOR
+	
+		label.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+		label.TextStrokeTransparency = 0
+	
+		label.TextScaled = true
+		label.Font = Enum.Font.SourceSansBold
+	
+		label.Parent = billboard
+	
+	
+		friendESP[player] = {
+			highlight = highlight,
+			billboard = billboard,
+			humanoid = humanoid,
+			label = label
+		}
+	end
+	
+	
+	-- Update ESP
+	local function updateESP()
+		if not ENABLED then
+			return
+		end
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+	
+			if player ~= LocalPlayer then
+	
+				if isFriend(player) then
+	
+					local character = player.Character
+					local humanoid = character
+						and character:FindFirstChildOfClass("Humanoid")
+					local head = character
+						and character:FindFirstChild("Head")
+	
+					if humanoid
+						and head
+						and humanoid.Health > 0 then
+	
+						if not friendESP[player] then
+							createESP(player)
+						end
+	
+						local data = friendESP[player]
+	
+						if data and data.label then
+							local hp = math.floor(humanoid.Health)
+							local maxHP = math.floor(humanoid.MaxHealth)
+	
+							data.label.Text =
+								player.Name
+								.. "   HP: "
+								.. hp
+								.. "/"
+								.. maxHP
+						end
+	
+					else
+						removeESP(player)
+					end
+	
+				else
+					removeESP(player)
+				end
+			end
+		end
+	end
+	
+	
+	-- Toggle button
+	Button.Activated:Connect(function()
+	
+		ENABLED = not ENABLED
+	
+		if ENABLED then
+	
+			Button.BackgroundColor3 = ON_COLOR
+	
+			updateESP()
+	
+		else
+	
+			Button.BackgroundColor3 = NORMAL_COLOR
+	
+			for player in pairs(friendESP) do
+				removeESP(player)
+			end
+		end
+	end)
+	
+	
+	-- Continuously update
+	RunService.Heartbeat:Connect(function()
+		if ENABLED then
+			updateESP()
+		end
+	end)
+	
+	
+	-- Remove ESP when player leaves
+	Players.PlayerRemoving:Connect(function(player)
+		removeESP(player)
+	end)
+end
+coroutine.wrap(QQEI_fake_script)()
+local function AEGJ_fake_script() -- CLICKTPBUTTON.LocalScript 
+	local script = Instance.new('LocalScript', CLICKTPBUTTON)
+
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	
+	local player = Players.LocalPlayer
+	local mouse = player:GetMouse()
+	local button = script.Parent
+	
+	local enabled = false
+	
+	local normalColor = button.BackgroundColor3
+	local enabledColor = Color3.fromRGB(50, 200, 80)
+	
+	
+	button.Activated:Connect(function()
+		enabled = not enabled
+	
+		if enabled then
+			button.BackgroundColor3 = enabledColor
+		else
+			button.BackgroundColor3 = normalColor
+		end
+	end)
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if not enabled or gameProcessed then
+			return
+		end
+	
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+	
+			-- Don't teleport when clicking the GUI itself
+			if UserInputService:GetFocusedTextBox() then
+				return
+			end
+	
+			local character = player.Character
+			local root = character and character:FindFirstChild("HumanoidRootPart")
+	
+			if not root then
+				return
+			end
+	
+			local hitPosition = mouse.Hit.Position
+	
+			-- Put the character slightly above the clicked surface
+			root.CFrame = CFrame.new(
+				hitPosition + Vector3.new(0, 3, 0)
+			)
+		end
+	end)
+end
+coroutine.wrap(AEGJ_fake_script)()
+local function WXPPYHS_fake_script() -- AIMBOTBUTTON.LocalScript 
+	local script = Instance.new('LocalScript', AIMBOTBUTTON)
+
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	
+	local LocalPlayer = Players.LocalPlayer
+	local Camera = workspace.CurrentCamera
+	
+	local AIMBOT_ENABLED = true
+	local FOV_RADIUS = 60
+	local SMOOTHNESS = 0.2
+	local MAX_DISTANCE = 1000
+	
+	local holdingAim = false
+	local currentTarget = nil
+	
+	local function isValidTarget(player)
+		if not player or player == LocalPlayer then
+			return false
+		end
+	
+		-- Don't target teammates
+		if player.Team ~= nil and LocalPlayer.Team ~= nil then
+			if player.Team == LocalPlayer.Team then
+				return false
+			end
+		end
+	
+		local character = player.Character
+		if not character then
+			return false
+		end
+	
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if not humanoid or humanoid.Health <= 0 then
+			return false
+		end
+	
+		local root = character:FindFirstChild("HumanoidRootPart")
+		if not root then
+			return false
+		end
+	
+		-- Don't target characters too far away
+		if (root.Position - Camera.CFrame.Position).Magnitude > MAX_DISTANCE then
+			return false
+		end
+	
+		return true
+	end
+	
+	local function getClosestTarget()
+		local viewportSize = Camera.ViewportSize
+		local screenCenter = Vector2.new(
+			viewportSize.X / 2,
+			viewportSize.Y / 2
+		)
+	
+		local closestPlayer = nil
+		local closestDistance = FOV_RADIUS
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+			if isValidTarget(player) then
+				local character = player.Character
+				local root = character:FindFirstChild("HumanoidRootPart")
+	
+				local screenPosition, onScreen =
+					Camera:WorldToViewportPoint(root.Position)
+	
+				if onScreen then
+					local screenDistance = (
+						Vector2.new(screenPosition.X, screenPosition.Y)
+						- screenCenter
+					).Magnitude
+	
+					if screenDistance < closestDistance then
+						closestDistance = screenDistance
+						closestPlayer = player
+					end
+				end
+			end
+		end
+	
+		return closestPlayer
+	end
+	
+	UserInputService.InputBegan:Connect(function(input, processed)
+		if processed then
+			return
+		end
+	
+		if input.UserInputType == Enum.UserInputType.MouseButton2 then
+			holdingAim = true
+			currentTarget = getClosestTarget()
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton2 then
+			holdingAim = false
+			currentTarget = nil
+		end
+	end)
+	
+	RunService.RenderStepped:Connect(function()
+		if not AIMBOT_ENABLED or not holdingAim then
+			return
+		end
+	
+		-- Target died/left/changed teams
+		if not isValidTarget(currentTarget) then
+			currentTarget = getClosestTarget()
+		end
+	
+		if not currentTarget then
+			return
+		end
+	
+		local character = currentTarget.Character
+		local root = character and character:FindFirstChild("HumanoidRootPart")
+	
+		if not root then
+			currentTarget = nil
+			return
+		end
+	
+		-- Aim at the target
+		local targetPosition = root.Position
+	
+		local desiredCFrame = CFrame.lookAt(
+			Camera.CFrame.Position,
+			targetPosition
+		)
+	
+		Camera.CFrame = Camera.CFrame:Lerp(
+			desiredCFrame,
+			SMOOTHNESS
+		)
+	end)
+end
+coroutine.wrap(WXPPYHS_fake_script)()
+local function KJEKEE_fake_script() -- AIMBOTBUTTON.LocalScript 
+	local script = Instance.new('LocalScript', AIMBOTBUTTON)
+
+	local button = script.Parent
+	
+	local normalColor = button.BackgroundColor3
+	local enabledColor = Color3.fromRGB(50, 200, 80)
+	
+	local enabled = false
+	
+	button.MouseButton1Click:Connect(function()
+		enabled = not enabled
+	
+		if enabled then
+			button.BackgroundColor3 = enabledColor
+		else
+			button.BackgroundColor3 = normalColor
+		end
+	end)
+end
+coroutine.wrap(KJEKEE_fake_script)()
+local function NDKEMED_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local frame = script.Parent
+	
+	-- How tall the draggable top area is
+	local DRAG_HEIGHT = 40
+	
+	local dragging = false
+	local dragStart
+	local startPosition
+	
+	local function updateDrag(input)
+		local delta = input.Position - dragStart
+	
+		frame.Position = UDim2.new(
+			startPosition.X.Scale,
+			startPosition.X.Offset + delta.X,
+			startPosition.Y.Scale,
+			startPosition.Y.Offset + delta.Y
+		)
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+	
+			local mousePosition = input.Position
+			local frameTop = frame.AbsolutePosition.Y
+	
+			-- Only allow dragging from the top of the Frame
+			if mousePosition.Y <= frameTop + DRAG_HEIGHT then
+				dragging = true
+				dragStart = input.Position
+				startPosition = frame.Position
+			end
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			UserInputService.InputChanged:Connect(function(changedInput)
+				if dragging and changedInput == input then
+					updateDrag(changedInput)
+				end
+			end)
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = false
+		end
+	end)
+end
+coroutine.wrap(NDKEMED_fake_script)()
